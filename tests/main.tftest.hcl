@@ -10,7 +10,8 @@ variables {
 }
 
 provider "fakewebservices" {
-  hostname = "app.terraform.io"
+  hostname = var.fws_hostname
+  token    = var.fake_token
 }
 
 run "resource_validation" {
