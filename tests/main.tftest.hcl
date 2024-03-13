@@ -8,10 +8,11 @@ variables {
   database_size  = 128
   vpc_cidr_block = "10.0.0.0/16"
   fake_token     = null
+  fws_hostname   = "app.terraform.io"
 }
 
 provider "fakewebservices" {
-  // hostname = var.fws_hostname
+  hostname = var.fws_hostname
   token    = var.fake_token
 }
 
