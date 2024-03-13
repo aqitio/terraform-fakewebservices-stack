@@ -2,16 +2,17 @@
 # WARNING: Generated module tests should be considered experimental and be reviewed by the module author.
 
 variables {
-  stack_prefix  = "test"
-  server_count  = 2
-  server_type   = "t2.micro"
-  database_size = 128
+  stack_prefix   = "test"
+  server_count   = 2
+  server_type    = "t2.micro"
+  database_size  = 128
   vpc_cidr_block = "10.0.0.0/16"
+  fake_token     = null
 }
 
 provider "fakewebservices" {
   // hostname = var.fws_hostname
-  // token    = var.fake_token
+  token    = var.fake_token
 }
 
 run "resource_validation" {
