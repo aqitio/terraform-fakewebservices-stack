@@ -9,6 +9,10 @@ variables {
   vpc_cidr_block = "10.0.0.0/16"
 }
 
+provider "fakewebservices" {
+  hostname = "app.terraform.io"
+}
+
 run "resource_validation" {
   assert {
     condition     = fakewebservices_vpc.vpc.name == "TEST_VPC"

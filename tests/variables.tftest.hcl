@@ -1,6 +1,10 @@
 
 # WARNING: Generated module tests should be considered experimental and be reviewed by the module author.
 
+provider "fakewebservices" {
+  hostname = "app.terraform.io"
+}
+
 run "variables_validation" {
   variables {
     stack_prefix   = "test"
