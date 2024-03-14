@@ -1,5 +1,3 @@
-
-# WARNING: Generated module tests should be considered experimental and be reviewed by the module author.
 variables {
   fws_hostname = "app.terraform.io"
 }

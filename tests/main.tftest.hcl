@@ -1,6 +1,3 @@
-
-# WARNING: Generated module tests should be considered experimental and be reviewed by the module author.
-
 variables {
   stack_prefix   = "test"
   server_count   = 2
