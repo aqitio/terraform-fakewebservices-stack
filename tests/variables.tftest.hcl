@@ -1,5 +1,13 @@
 
 # WARNING: Generated module tests should be considered experimental and be reviewed by the module author.
+variables {
+  fws_hostname = "app.terraform.io"
+}
+
+provider "fakewebservices" {
+  hostname = var.fws_hostname
+  token    = var.fake_token
+}
 
 run "variables_validation" {
   variables {
