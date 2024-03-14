@@ -7,7 +7,6 @@ variables {
   server_type    = "t2.micro"
   database_size  = 128
   vpc_cidr_block = "10.0.0.0/16"
-  fake_token     =
   fws_hostname   = "app.terraform.io"
 }
 
